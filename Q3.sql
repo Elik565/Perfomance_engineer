@@ -8,7 +8,7 @@ analyze t1;
 analyze t2;
 
 explain (analyze, buffers)
-select day from t2 where t_id not in ( select t1.id from t1);
+select day from t2 where t_id not in (select t1.id from t1);
 
 drop index t1_id_idx;
 drop index t2_tidday_idx;
